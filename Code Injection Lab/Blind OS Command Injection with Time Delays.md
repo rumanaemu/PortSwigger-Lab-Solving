@@ -9,7 +9,7 @@ The injection does not return command output, but we can confirm execution using
 
 ## Evidence of Exploitation
 
-### Request
+## Request
 ```http
 POST /feedback/submit HTTP/2
 Host: 0af8006903efd585811707cc003b0054.web-security-academy.net
@@ -19,7 +19,7 @@ Content-Length: 112
 
 csrf=RSaFY6HpuFOg03gYR5dybcfGA6YOppT&name=Rumana&email=Rumana%40gmail.com; sleep+10;&subject=Nothing&message=Hi
 
-### Response
+## Response
 
 HTTP/2 500 Internal Server Error
 Content-Type: application/json; charset=utf-8
@@ -28,7 +28,7 @@ Content-Length: 16
 "Could not save"
 
 
-### Observation
+## Observation
 
 -The server response was delayed by approximately 10 seconds after submission.
 
@@ -37,7 +37,7 @@ Content-Length: 16
 -Even though the response returned an error message (Could not save), the timing difference proves successful exploitation.
 
 
-### Impact
+## Impact
 
 -Attackers can execute arbitrary system commands on the underlying server.
 
@@ -49,27 +49,27 @@ Content-Length: 16
 
 -Full server compromise
 
-### Root Cause
+## Root Cause
 The application concatenates untrusted user input (the `email` parameter) into a system command without proper sanitization.  
 
 Special shell metacharacters (`;`, `&&`, `|`) are not filtered.
 
-### Mitigation
+## Mitigation
 - **Avoid system calls with user input** – Use safe APIs and parameterized functions.  
 - **Input Validation & Sanitization** – Reject dangerous characters and enforce strict input rules (e.g., valid email format).  
 - **Least Privilege Execution** – Run the application with minimal system permissions.  
 - **Monitoring** – Detect abnormal response delays that may indicate exploitation attempts.
 
-### Skills Demonstrated
+## Skills Demonstrated
 - Identification of blind command injection  
 - Use of time-based payloads (`sleep 10`)  
 - Validation of command execution through response timing analysis  
 - Crafting injection payloads in a POST request body
 
-### References
+## References
 - [PortSwigger Academy: Blind OS command injection with time delays](https://portswigger.net/web-security/os-command-injection/blind)  
 - [OWASP: OS Command Injection](https://owasp.org/www-community/attacks/Command_Injection)
 
-### Screenshot
+## Screenshot
 ![Blind OS Command](/images/Code-Injection-Lab2-backend.jpg)  
 ![Blind OS Command lab solved](/images/Code-Injection-Lab2.jpg) 

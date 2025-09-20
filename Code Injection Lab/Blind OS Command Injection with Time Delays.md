@@ -12,9 +12,6 @@ This lab from **PortSwigger / Web Security Academy** demonstrates a **blind OS c
 ## Environment & Tools
 - Target: lab instance hosted at Web Security Academy (example host shown in screenshots).  
 - Tools used: Burp Suite (Proxy + Repeater), browser, optional `curl`/`time` for timing checks.  
-- Evidence images (stored in the workspace):
-  - `/mnt/data/Code-Injection-Lab2.jpg` — lab success screenshot (congratulations banner).  
-  - `/mnt/data/Code-Injection-Lab2-backend.jpg` — intercepted HTTP request/response showing the injected payload and server response.
 
 ---
 
@@ -114,7 +111,8 @@ _Response time was ~10 seconds longer than the baseline request._
 - `Code-Injection-Lab2-backend.jpg` — Burp capture showing the injected `sleep+10` payload in the POST body and the server response.  
 - `Code-Injection-Lab2.jpg` — Lab completion screenshot showing the “Congratulations, you solved the lab!” banner.
 
-(Images available in the workspace: `/images/Code-Injection-Lab2-backend.jpg`, `/images/Code-Injection-Lab2.jpg`)
+![Code-Injection-Lab2-backend.jpg](/images/Code-Injection-Lab2-backend.jpg)  
+![Code-Injection-Lab2.jpg](/images/Code-Injection-Lab2.jpg)  
 
 ---
 

@@ -77,4 +77,4 @@ to view or manipulate other users’ accounts.
 ---
 
 ## Screenshots
-![Lab Solved Screenshot](/images/images/Broken-Access-Lab2.jpg) 
+![Lab Solved Screenshot](/images/Broken-Access-Lab2.jpg) 

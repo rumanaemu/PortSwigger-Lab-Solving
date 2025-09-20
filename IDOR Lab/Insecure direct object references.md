@@ -86,7 +86,6 @@ In this scenario, user chat logs are stored as files on the server and accessed 
 
 ## Screenshots
 ![Lab Solved](/images/IDOR-Lab1.jpg)  
-*(Replace with your actual screenshot of the transcript URL or response)*
 
 ![Password Found in Transcript](/images/IDOR-Lab2-PasswordFound.jpg)  
 

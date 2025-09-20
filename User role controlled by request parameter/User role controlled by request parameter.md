@@ -78,4 +78,4 @@ This is insecure because:
 
 ## Screenshots
 ![Lab Solved Screenshot](images/lab-solved.jpg)  
-*(Replace with your actual screenshot path in the repo)*
+

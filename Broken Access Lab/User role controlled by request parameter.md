@@ -77,5 +77,5 @@ This is insecure because:
 ---
 
 ## Screenshots
-![Lab Solved Screenshot](images/lab-solved.jpg)  
+![Lab Solved Screenshot](images/Broken-Access-Lab1.jpg)  
 

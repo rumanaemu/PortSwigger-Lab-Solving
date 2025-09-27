@@ -1,4 +1,4 @@
-# Lab Report: Reflected XSS (Screenshots Evidence)
+# Lab Report: Reflected XSS into HTML context with nothing encoded
 
 ## Overview
 This report documents a successful **reflected cross-site scripting (XSS)** exploitation of the search functionality. The provided screenshots show the attack URL with the injected payload and the resulting evidence: a browser alert and the lab "Solved" confirmation.
@@ -40,4 +40,12 @@ The exact payload used in the attack (as provided) is shown below:
 - Sanitize and validate inputs where appropriate; prefer whitelisting acceptable values.
 
 ---
+
+## References
+- OWASP: Cross Site Scripting (XSS) — https://owasp.org/www-community/attacks/xss/
+- OWASP Cheat Sheet: Cross-Site Scripting (XSS) Prevention — https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html
+- PortSwigger Web Security Academy: Reflected XSS — https://portswigger.net/web-security/cross-site-scripting/reflected/lab-html-context-nothing-encoded
+- PortSwigger Web Security Academy: XSS Cheat Sheet — https://portswigger.net/web-security/cross-site-scripting/cheat-sheet
+
+
 *End of report.*

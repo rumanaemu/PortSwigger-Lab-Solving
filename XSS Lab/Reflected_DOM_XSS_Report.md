@@ -27,10 +27,10 @@ In this case, the vulnerable parameter in the query string is processed by clien
 ## Evidence
 
 ### 1) XSS Payload Execution
-![Payload Execution Screenshot](/mnt/data/Reflected DOM XSS.jpg)
+![Payload Execution Screenshot](/images/Reflected%20DOM%20XSS.jpg)
 
 ### 2) Lab Solved Confirmation
-![Lab Solved Screenshot](/mnt/data/Reflected DOM XSS lab solved.jpg)
+![Lab Solved Screenshot](/images/Reflected%20DOM%20XSS%20lab%20solved.jpg)
 
 > The screenshots show both the execution of the payload via an alert popup and the successful lab completion message.
 
